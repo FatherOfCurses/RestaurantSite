@@ -19,3 +19,29 @@ img {
     width: 400px;
     height: 150px;
 }
+
+div{
+    clear:both;
+    padding-top:10px;
+}
+label {
+    text-align: right;
+    width: 300px;
+    float: left;
+    font-weight: bold;
+    padding-right: 20px;
+}
+textarea {
+    width: 170px;
+    height: 100px;
+    float: left;
+}
+select{
+    float: left;
+}
+
+
+input[type=submit] {
+    display:block;
+    margin: auto;
+}

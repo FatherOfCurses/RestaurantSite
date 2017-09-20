@@ -45,3 +45,11 @@ input[type=submit] {
     display:block;
     margin: auto;
 }
+
+.floating-box {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+    vertical-align: text-top;
+}

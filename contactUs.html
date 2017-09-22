@@ -4,6 +4,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
     <title>Contact Us</title>
 </head>
 <style>
@@ -11,7 +12,6 @@
         text-align: right;
         width: 300px;
         float: left;
-        font-weight: bold;
         padding-right: 20px;
     }
 
@@ -25,16 +25,23 @@
         float: left;
     }
 
-
     input[type=submit] {
         display: block;
         margin: auto;
+    }
+
+    .required{
+        font-weight: bold;
+    }
+
+    .formfield {
+        padding-top: 20px;
     }
 </style>
 
 <body>
     <!--Shared top page elements-->
-    <h1>Cafe Unum</h1>
+    <h1 class="customfont">Cafe Unum</h1>
     <hr>
     <div>
         <p class="header"><a href="index.html">Home</a></p>
@@ -44,20 +51,20 @@
     <hr>
     <!-- End shared top page elements-->
     <form action="#" method="post">
-        <div>
-            <label id="FullNameLabel" for="FullName">Name: </label>
+        <div class="formfield">
+            <label class="required" id="FullNameLabel" for="FullName">Name: </label>
             <input id="FullName" name="FullName" type="text" />
         </div>
-        <div>
-            <label id="EmailLabel" for="Email">Email: </label>
+        <div class="formfield">
+            <label class="required" id="EmailLabel" for="Email">Email: </label>
             <input id="Email" name="Email" type="text" />
         </div>
-        <div>
-            <label id="PhoneLabel" for="Phone">Phone: </label>
+        <div class="formfield">
+            <label class="required" id="PhoneLabel" for="Phone">Phone: </label>
             <input id="Phone" name="Phone" type="text" />
         </div>
-        <div>
-            <label id="Reason" for="Reason">Reason for Inquiry:</label>
+        <div class="formfield">
+            <label class="required" id="Reason" for="Reason">Reason for Inquiry:</label>
             <select name="Reason" id="Reason">
             <option value="Catering">Catering</option>
             <option value="Private Party">Private Party</option>
@@ -65,16 +72,16 @@
             <option value="Other">Other</option>
         </select>
         </div>
-        <div>
+        <div class="formfield">
             <label id="InformationLabel" for="Information">Additional Information: </label>
             <textarea name="Information" id="Information"></textarea>
         </div>
-        <div>
+        <div class="formfield">
             <label id="PriorCustomerLabel" for="PriorCustomer">Have you been to the restaurant? </label>
             <input type="radio" name="PriorCustomer" id="PriorCustomer" value="No" checked/>No
             <input type="radio" name="PriorCustomer" id="PriorCustomer" value="Yes" />Yes
         </div>
-        <div>
+        <div class="formfield">
             <label id="BestContactDayLabel" for="BestContactDay">Best days to contact you:</label>
             <input type="checkbox" name="Monday" id="Monday" />M
             <input type="checkbox" name="Tuesday" id="Tuesday" />T

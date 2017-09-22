@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <!-- Developed by Colin Principe September 20 2017 -->
+
 <head>
     <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
     <title>Home Page</title>
 </head>
+<style>
+    .customfont {
+        font-family: "Sacramento", Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 72px;
+    }
+</style>
 
 <body>
     <!--Shared top page elements-->
-    <h1>Cafe Unum</h1>
+    <h1 class="customfont">Cafe Unum</h1>
     <hr>
     <div>
         <p class="header"><a href="index.html">Home</a></p>
@@ -17,13 +25,15 @@
     </div>
     <hr>
     <!-- End shared top page elements-->
-    <div>
-        <img style="display:block;margin:auto;width:400px;height:150px;" src="images\unum.jpg" alt="Unums Front Door">
-    </div>
-    <div>
-        <p style="width:400px;margin:auto;padding-top:20px;padding-bottom:20px">Situated just east of Main Street, Cafe Unum brings American Contmporary dining to Nashua. Featuring farm-to-table
-            cuisine, the constantly changing menu is sure to surprise. Our experienced wait staff is always ready to provide
-            wine recommendations. Unum is a short walk from Main Street attractions as well as Memorial Auditorium.</p>
+    <div style="background-color:lightyellow">
+        <div>
+            <img style="display:block;margin:auto;width:400px;height:150px;" src="images\unum.jpg" alt="Unums Front Door">
+        </div>
+        <div>
+            <p style="width:400px;margin:auto;padding-top:20px;padding-bottom:20px">Situated just east of Main Street, Cafe Unum brings American Contmporary dining to Nashua. Featuring farm-to-table
+                cuisine, the constantly changing menu is sure to surprise. Our experienced wait staff is always ready to
+                provide wine recommendations. Unum is a short walk from Main Street attractions as well as Memorial Auditorium.</p>
+        </div>
     </div>
     <!-- Shared bottom page elements-->
     <hr>
@@ -31,8 +41,9 @@
         <p class="footer">47 East Pearl St, Nashua, NH, 03060</p>
         <p class="footer">603-821-6500</p>
     </div>
-    <hr>
-    <!-- End shared bottom page elements -->
+</body>
+<hr>
+<!-- End shared bottom page elements -->
 
 </body>
 

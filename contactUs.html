@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <!-- Developed by Colin Principe September 20 2017 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <head>
     <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
     <title>Contact Us</title>
 </head>
+
 <style>
-    label {
-        text-align: right;
-        width: 300px;
-        float: left;
-        padding-right: 20px;
-    }
 
     textarea {
         width: 170px;
@@ -30,70 +30,99 @@
         margin: auto;
     }
 
-    .required{
-        font-weight: bold;
-    }
-
     .formfield {
         padding-top: 20px;
     }
-
 </style>
 
 <body>
-    <!--Shared top page elements-->
+    <!-- Shared top page elements -->
     <h1 class="customfont">Cafe Unum</h1>
     <hr>
-    <div>
-        <p class="header"><a href="index.html">Home</a></p>
-        <p class="header"><a href="menu.html">Menu</a></p>
-        <p class="header"><a href="contactUs.html">Contact Us</a></p>
+    <div class="container">
+        <ul class="nav nav-tabs" role="tablist">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home"></a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li class="active"><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="jumbotron text-center">
+        <h1>New Location Opening</h1>
+        <p>We are happy to announce our new location opening at 1 Main Street!</p>
     </div>
     <hr>
     <!-- End shared top page elements-->
-    <form action="#" method="post">
-        <div class="formfield">
-            <label class="required" id="FullNameLabel" for="FullName">Name: </label>
-            <input id="FullName" name="FullName" type="text" />
-        </div>
-        <div class="formfield">
-            <label class="required" id="EmailLabel" for="Email">Email: </label>
-            <input id="Email" name="Email" type="text" />
-        </div>
-        <div class="formfield">
-            <label class="required" id="PhoneLabel" for="Phone">Phone: </label>
-            <input id="Phone" name="Phone" type="text" />
-        </div>
-        <div class="formfield">
-            <label class="required" id="Reason" for="Reason">Reason for Inquiry:</label>
-            <select name="Reason" id="Reason">
-            <option value="Catering">Catering</option>
-            <option value="Private Party">Private Party</option>
-            <option value="Feedback">Feedback</option>
-            <option value="Other">Other</option>
-        </select>
-        </div>
-        <div class="formfield">
-            <label id="InformationLabel" for="Information">Additional Information: </label>
-            <textarea name="Information" id="Information"></textarea>
-        </div>
-        <div class="formfield">
-            <label id="PriorCustomerLabel" for="PriorCustomer">Have you been to the restaurant? </label>
-            <input type="radio" name="PriorCustomer" id="PriorCustomer" value="No" checked/>No
-            <input type="radio" name="PriorCustomer" id="PriorCustomer" value="Yes" />Yes
-        </div>
-        <div class="formfield">
-            <label id="BestContactDayLabel" for="BestContactDay">Best days to contact you:</label>
-            <input type="checkbox" name="Monday" id="Monday" />M
-            <input type="checkbox" name="Tuesday" id="Tuesday" />T
-            <input type="checkbox" name="Wednesday" id="Wednesday" />W
-            <input type="checkbox" name="Thursday" id="Thursday" />Th
-            <input type="checkbox" name="Friday" id="Friday" />F
-        </div>
-        <div>
-            <input type="submit" id="SubmitButton" value="Send Request" />
-        </div>
-    </form>
+
+    <div class="container">
+        <form action="#" method="post" class="form-horizontal">
+            <div class="container">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" id="FullNameLabel" for="FullName">Name: </label>
+                    <div class="col-sm-5">
+                        <input type="Name" class="form-control" id="Name" placeholder="Enter Name">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" id="EmailLabel" for="Email">Email: </label>
+                    <div class="col-sm-5">
+                        <input type="Name" class="form-control" id="email" placeholder="Enter Email">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" id="Phone" for="Phone">Phone: </label>
+                    <div class="col-sm-5">
+                        <input type="Name" class="form-control" id="Phone" placeholder="Enter Phone">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="Reason" id="Reason">Reason for Inquiry:</label>
+                    <div class="col-sm-5">
+                        <select class="form-control" name="Reason" id="Reason">
+                            <option value="Catering">Catering</option>
+                            <option value="Private Party">Private Party</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Other">Other</option>
+                         </select>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" id="InformationLabel" for="Information">Additional Information: </label>
+                    <div class="col-sm-5">
+                        <textarea class="form-control" rows "5" name="Information" id="Information">
+                            </textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" id="PriorCustomerLabel" for="PriorCustomer">Have you been to the restaurant? </label>
+                    <div class="col-sm-5">
+                        <label class="control-label radio-inline"><input type="radio" name="PriorCustomer" id="PriorCustomer" value="No" checked/>No</label>
+                        <label class="control-label radio-inline"><input type="radio" name="PriorCustomer" id="PriorCustomer" value="Yes" />Yes</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <label class="control-label col-sm-2" id="BestContact" for="BestContact">What is the best time to contact you? </label>
+                <div class="checkbox">
+                    <label class="control-label checkbox-inline"><input type="checkbox" value="Monday">M</label>
+                    <label class="control-label checkbox-inline"><input type="checkbox" value="Tuesday">T</label>
+                    <label class="control-label checkbox-inline"><input type="checkbox" value="Wednesday">W</label>
+                    <label class="control-label checkbox-inline"><input type="checkbox" value="Thursday">Th</label>
+                    <label class="control-label checkbox-inline"><input type="checkbox" value="Friday">F</label>
+                </div>
+            </div> 
+        </form>
+    </div>
 
     <!-- Shared bottom page elements-->
     <hr>

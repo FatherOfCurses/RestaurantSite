@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <!-- Developed by Colin Principe September 20 2017 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+
+</script>
 
 <head>
     <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
@@ -18,21 +25,32 @@
     <!--Shared top page elements-->
     <h1 class="customfont">Cafe Unum</h1>
     <hr>
-    <div>
-        <p class="header"><a href="index.html">Home</a></p>
-        <p class="header"><a href="menu.html">Menu</a></p>
-        <p class="header"><a href="contactUs.html">Contact Us</a></p>
+    <div class="container">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="jumbotron text-center">
+        <h1>New Location Opening</h1>
+        <p>We are happy to announce our new location opening at 1 Main Street!</p>
     </div>
     <hr>
     <!-- End shared top page elements-->
     <div style="background-color:lightyellow">
-        <div>
-            <img style="display:block;margin:auto;width:400px;height:150px;" src="images\unum.jpg" alt="Unums Front Door">
-        </div>
-        <div>
-            <p style="width:400px;margin:auto;padding-top:20px;padding-bottom:20px">Situated just east of Main Street, Cafe Unum brings American Contmporary dining to Nashua. Featuring farm-to-table
-                cuisine, the constantly changing menu is sure to surprise. Our experienced wait staff is always ready to
-                provide wine recommendations. Unum is a short walk from Main Street attractions as well as Memorial Auditorium.</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img class="img-responsive center-block" style="width:400px;height:150px" src="images\unum.jpg" alt="Unums Front Door">
+                </div>
+                <div class="col-sm-6">
+                    <p class="blockquote" style="margin:20px">Situated just east of Main Street, Cafe Unum brings American Contmporary dining to Nashua. Featuring
+                        farm-to-table cuisine, the constantly changing menu is sure to surprise. Our experienced wait staff
+                        is always ready to provide wine recommendations. Unum is a short walk from Main Street attractions
+                        as well as Memorial Auditorium.</p>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Shared bottom page elements-->

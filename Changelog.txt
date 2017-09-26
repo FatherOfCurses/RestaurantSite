@@ -1,0 +1,22 @@
+Changelog
+
+---------
+
+V5
+September 25
+
+1. Add Bootstrap to the site.
+
+2. Style the site navigation so that:
+
+a. You are using either tabs or pills.
+
+b. Use a jumbotron or page header to call out big news - your restaurant is opening a new location!
+
+3. Make the site responsive using Bootstrap's grid system.
+
+a. The menu items should stack well, with no overlapping.
+
+b. The front page content should stack as well.
+
+c. Change the Home link to use the Glyphicon that looks like a house.

@@ -20,3 +20,17 @@ a. The menu items should stack well, with no overlapping.
 b. The front page content should stack as well.
 
 c. Change the Home link to use the Glyphicon that looks like a house.
+
+--------
+V6
+September 26
+
+1. Add a Carousel that rotates with three pieces of information:
+
+a. We're opening a new location!
+
+b. We're rolling out our seasonal menu, with special options for this season.
+
+c. The Drink of the Month is SG Special Brew.
+
+2. Make sure that users who have JavaScript disabled know that this site is best viewed with JavaScript enabled.
